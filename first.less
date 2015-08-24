@@ -1,0 +1,128 @@
+@import 'bare';
+@font1:"ptserif";
+.font(@font1);
+
+@color:#2c75c0;
+@color2:#5fcab4;
+@color3:#688dcd;
+@color4:#1D365D;
+@white:#fff;
+@grey:#f7f7f7;
+.setHorNav(100%,darken(spin(@color4,20),5%),#fff);
+.headings(8,4,2.5,"open sans");
+.pagefull();
+
+div.sai{
+height:3em;
+font-family:"open sans",Arial, Helvetica, sans-serif;
+color:lighten(spin(@color4,20),40%);
+color:#fff;
+font-size:4em;
+}
+
+nav a{
+	.trans(background,0.8s,ease);
+}
+nav a:hover,a.current{
+	.gradient(#EEE,#DDD,#FFF);
+	color:@color4;
+}
+
+h2{
+	color:lighten(spin(@color4,20),40%);
+	color:#fff;
+	background: darken(spin(@color4,20),10%);
+	//background: lighten(spin(@color4,-10),20%);
+	//background:rgb(0,188,242);
+	border-bottom:solid 1px rgba(255,255,255,0.2);
+	}
+
+
+div.sai:nth-child(1){
+	background: spin(@color,10);
+	}
+div.sai:nth-child(2){
+	background: spin(@color,20);
+	}
+div.sai:nth-child(3){
+	background: spin(@color,30);
+	}
+div.sai:nth-child(4){
+	background: spin(@color,40);
+	}
+	
+div.sai:nth-child(5){
+	background: spin(@color2,10);
+	}
+div.sai:nth-child(6){
+	background: spin(@color2,20);
+	}
+div.sai:nth-child(7){
+	background: spin(@color2,30);
+	}
+div.sai:nth-child(8){
+	background: spin(@color2,40);
+	}
+	
+	
+div.sai:nth-child(9){
+	background: spin(@color3,10);
+	}
+div.sai:nth-child(10){
+	background: spin(@color3,20);
+	}
+div.sai:nth-child(11){
+	background: spin(@color3,40);
+	}
+div.sai:nth-child(12){
+	background: spin(@color3,60);
+	}
+div.sai:nth-child(13){
+	background: spin(@color4,0);
+	}
+div.sai:nth-child(14){
+	background: darken(spin(@color4,20),10%);
+	}
+div.sai:nth-child(15){
+	background: spin(@color4,40);
+	}
+div.sai:nth-child(16){
+	background: spin(@color4,60);
+	}
+
+footer{
+	.setFooter(100%,darken(spin(@color4,20),10%),lighten(spin(@color4,20),40%));
+	text-align:center;
+	border-top:solid 1px rgba(255,255,255,0.2);
+}
+
+fieldset label{
+	width:160px;
+	display:inline-block;
+	text-align:center;
+}
+table{
+	width:80%;
+	margin:1em auto;
+	
+	tr td{
+		max-width:80px;
+		text-align:center;
+		max-height:3em;
+		overflow:hidden;
+	}
+}
+a[href^="dbedit"]{
+	font-size:2em;
+	text-decoration:none;
+	display:inline-block;
+	.gradient(#EEE,#DDD,#FFF);
+	border:solid 2px @color4;
+	margin:2em 1em;
+	.round(5px);
+	padding:0.5em 1em;
+}
+.even{
+	background:darken(@grey,10%);
+	color:contrast(@grey);
+}

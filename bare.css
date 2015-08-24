@@ -1,0 +1,18 @@
+/* Border Radius function */
+/* Border Radius function */
+/* Transform function */
+/* Transform rotateX function */
+/* Transform rotateY function */
+/* Transform rotateZ function */
+/* Transition function */
+/* Box shadow */
+/* pagefull */
+/* Multicolumn Fluid Layout
+.columns(@colwidth: 100%, @colcount: 1, @colgap: 1em, @columnRuleColor: #EEE, @columnRuleStyle: solid, @columnRuleWidth: 1px) {
+	
+	width:@colwidth;
+	border-left:@columnRuleStyle @columnRuleWidth @columnRuleColor;
+	margin-left:@colgap;
+	display:inline-block;
+}
+*/
